@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katie Truchon, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--IN DOCUMENT STYLING-->
+    <style>
+        /*in here we write in CSS*/
+
+        /*SELECTING in CSS & JAVASCRIPT: select specific element(s) on a page
+
+            * By elemnt or tag type     ex: bodym div, p
+            * By ID attribute           ex: #wrapper, #NAV, #footer, #title
+            * BY CLASS attribute        ex: Coming in week 3
+
+        */
+
+        div {/*Applies to all divs on the page*/
+
+            border:1px solid black;
+            padding:10px; /*adds 10px todf space to all 4 4 sides o the elements. between its
+            content and uts border*/
+            margin:5px; /*adds 5px of space to all 4 sides between other elements*/
+            
+
+        }
+        
+
+        #nav{/* # specifies ID name, only applies to single element with that ID*/
+        
+            background: rgb(200, 200, 200);
+        
+        }
+
+
+    </style>
+</head>
+<body style="backround-color: grey">
+    <div id="wrapper"><!--wraps all around content on page-->
+
+        <!--NAV SECTION-->
+        <div id="nav">
+            <!--ID can only be used once per page-->
+
+            <!--Linkng to OUTSIE pages [not prt of your website] you need FULL PATH-->
+            <a href="https://www.meca.edu/" target="_blank">Visit MECA</a>
+            <!--href holds the URL of web page you are linking to-->
+            <!--target="_blank" opens in lik new tab in browser-->
+
+            <!--IN PAGE JUMP LINKSLinking to sections within the ctual page itself-->
+            <a href="bio">BIO</a>
+            <a href="#school">SCHOOLING</a>
+            <a href="#hobbies">HOBBIES</a>
+            <a href="footer">FOOTER</a>
+
+        </div><!--nav-->
+
+
+        <!--BIO SECTION--------------->
+        <div id="bio">
+
+            <h2>About Me</h2>
+
+            <p>I be cooling</p>
+
+            <!--Image Tag-->
+            <!--Remote image link eample (Absolute path {NOT SAFE})-->
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/004/677/931/small/an-astronaut-chilling-in-outer-space-with-food-and-beverage-colored-illustration-of-the-imaginative-nuance-in-cartoon-for-poster-promotion-and-many-more-free-vector.jpg" alt="Astronaut Floating nonchalantly through space">
+            
+
+        </div><!--/#bio-------------->
+        
+            <!--Relative IMG link example-->
+            <!--relative means; resource (file) exists WITHIN the root folder-->
+            <img src="	https://as2.ftcdn.net/v2/jpg/02/66/88/21/1000_F_266882190_g9Azmbq0lmXmosB3Wcuaz2eBRM2IlcTI.jpg" style= width:500px alt="cool skeleton in a floatee">
+    
+
+
+        <!--SCHOOLING SECTION----------------->
+        <div id="school">
+
+        </div><!--/#school-->
+
+
+        <!--HOBBIES SECTION---------------------->
+        <div id="hobbies">
+
+        </div><!--/#hoobies-->
+
+
+        <!--FOOTER SECTION--------------------->
+        <div id="footer">
+
+            <a href="#wrapper">Nack to Top of page</a>
+            <p>&copy; 2023 | C Soto-Reyes | SE111.02 [202320]</p>
+
+        </div><!--/#footer-->
+
+
+
+    </div><!--end of main div-------------------->
+
+</body>
+</html>
