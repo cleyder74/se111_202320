@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="cleyder">
+    <meta name="author" content="W5 Demo">
+    
+    <title>W5D1 | Tables & Forms </title>
+    <style>
+        table td {
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Basic Form Demo</h1>
+
+    <h2>FORM WITHOUT A TABLE (NOOOO)</h2>
+
+    <!--LABELS ARE USED TO MATCH UP WITH THE INPUT ELEMENTS TO BE READ/PROCESSED MORE EASILY IN 35-->
+
+    <!--
+        for attribute (input elemnent) connects the label attribute value
+        THESE MUST WATCH
+    -->
+    <form method="GET" action="confirm.html"
+
+        <!--First name-->
+
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname">
+        
+        <br>
+
+        <!--Last name-->
+
+        <label for="lasttname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname">
+
+        <br>
+
+        <!--Email-->
+
+        <label for="email">Email Address:</label>
+        <input type="text" name="email" id="email">
+
+        <br>
+        <br>
+        <!--since there is mare than 1 input elemnt, the form NEEDS 
+        a submit button in order to generate the full query string-->
+
+        <input type="submit" value="SUBMIT">
+
+        
+
+
+    </form>
+    <h2>Form WITH table (yessss)</h2>
+    <!--Neater alignment possiblities-->
+    
+    <!--form comes first-->
+    <form method="GET" action="_relative path to a js file_ or html file">
+         <table>
+
+               <!--<thread> an be used for column headers-->
+
+                <!--<tbody> is required inside of a table-->
+                
+                <tbody>
+
+                    <!--add data to the table row by row-->
+                    <!--table ROW; should include one <td> fo every posible column (leave the <td></td> blank)-->
+                        
+                
+
+                    <tr>
+                      <tr>
+
+                        <td><!--label-->
+                            <label for="firstname">First Name:</label>
+                        </td>
+                        
+                        <td>
+                            <input type="text" name="firstname" id="firstname" placeholder="Peter">
+                        </td>
+                     </tr>
+                    
+                        <tr>
+                            <td>
+                                <label for="lasttname">Last Name:</label>
+                            </td>
+
+                            <td>
+                                <input type="text" name="lastname" id="lastname" placeholder="Griffin">
+                            </td>
+                            
+                        
+                        </tr>
+                        
+                    <tr>
+
+                        <td>
+                            <label for="email">Email Address:</label>
+                        </td>
+
+                        <td>
+                            <input type="text" name="email" id="email" placeholder="123@email.com">
+                        </td>
+                    </tr>
+                    <!--Other types of input in rows below-->
+
+                    <!--Left column-->
+                    <tr>
+                        <td>
+                            <label for="comments">Comments:</label>
+                        </td>
+
+                        <!--Right column-->
+                        <td>
+                            <textarea name="comments" placeholder="Type Here..."></textarea>
+                        </td>
+                    </tr>
+                    <!---->
+                    <tr>
+                        <td>
+                            <label for="favecolor">Pick Your Favorite Color:</label>
+                        </td>
+
+                        <td>
+                            <select name="favecolor"><!--creates the drop down-->
+                                
+                                <!--List each option for drop down-->
+                                <option value="red">RED</option>
+                                <option value="blue">BLUE</option>
+                                <option value="green">GREEN</option>
+
+                            </select>
+                        </td>
+                    </tr>
+
+                    <!--radio buttons are like multiple choice questions, the circular buttons, Limited to 1-->
+                    <tr>
+
+                        <td>
+                            <label for="study">Programs of Study:</label>
+                        </td>
+
+                        <td>
+                            <input type="radio" name="study" value="SE">Software Engineer<br>
+                            <input type="radio" name="study" value="CYB">Cyber Security<br>
+                            <input type="radio" name="study" value="WD">Web Development<br>
+                            <input type="radio" name="study" value="NE">Networking<br>
+
+                        </td>
+                    </tr>
+
+                    <!--Check boxes. Multiple options (script prepared for all)-->
+                    <tr>
+                        
+                        <td>
+                            <label for="vehicle">Select your vehicle(s):</label>
+                        </td>
+
+                        <td>
+                            <input type="checkbox" name="vehicle1" value="car">Car <br>
+                            <input type="checkbox" name="vehicle2" value="roci">Rociante <br>
+                            <input type="checkbox" name="vehicle3" value="motorcycle">MotorCycle <br>
+                            <input type="checkbox" name="vehicle4" value="metal steed">Druid Plow <br>
+                        </td>
+                    </tr>
+
+                    <!--Date-->
+                    <tr>
+
+                        <td>
+                            <label for="date" name="date">Date:</label>
+                        </td>
+
+                        <td>
+                            <input type="date" name="date" value="2023-12-07">
+                        </td>
+                    </tr>
+
+
+
+
+
+
+                    <!--submit below-->
+                    </tr>
+                        <td>
+                            <input type="submit" value="SUBMIT">
+                        </td>
+                    
+                    </tr>
+                </tbody>
+
+
+         </table>
+    </form>
+    
+
+    
+</body>
+</html>
