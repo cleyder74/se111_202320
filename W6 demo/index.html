@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Cleyder">
+    <meta name="description" content="Week 6 JS Intro">
+
+    <title>Week 6 | JS Intro</title>
+</head>
+
+<body>
+   <!--we should have some sort of HTML in the file-->
+   <h1>Week 6 Intro Demo | Javascript</h1>
+   
+   <!--IN-DOCUMENT JAVASCRIPT-->
+   <!--in-document: lives within the .html (you saw this with CSS)-->
+   <script>
+
+      //everything inside of the script tags MUST be written in JAVASCRIPT!
+      //creating a variable -- keyword "var"
+
+      var num1 = 10
+      var num2 = 7
+
+      //cannot use num1 or num2 in a process unless they have been DEFINED (value stored to them)
+      var sum = num1 + num2
+
+       
+      
+       console.log(sum) //often used for testing
+      //no physical display, only found in the console
+      //the user will not see
+
+      console.log("hello world")
+      //can also just be print statements
+
+      console.log("hello world! the sum is: " + sum + " cool, right?")
+      //Long way to display both tring and stored data :(
+
+     
+      //SUPER POWERFUL STRING TYPES
+      console.log(`Hello world! the sum is: ${sum}. \n\n\ncool right?`) //Fun way
+      // escape sequences also work in Javascript --> \n (inside of strings!)
+
+      alert(`The sum is: \n${sum}!`)
+
+      //alert() allows for a pop-up in the browser page to display data
+      //alert() --> print() / OUTPUT
+      // ``denotes a literal string --> works similar to .format() in Python -- hold var names inside of ${VAR}
+
+      console.log("hi")
+      //alert(sum)
+      console.log("Hello")
+      //alert(`The sum is: $${sum.tofixed(2)}`)//Displays rounded decimals. EX-17.00
+      console.log("howdy")
+      
+
+      /*to view console: 
+           *F12/Right-Click > Inspect
+           *Choose CONSOLE at top right
+           *Refresh page
+      */
+
+      //is input() in python
+      //prompts user for value; waits for the ENTER key
+      //is required to intereact with in order to advance
+      var name1  = prompt("Enter your name: ") 
+      alert(`you're name is ${name}`)
+
+      //store the value form prompt()
+      var name2 = prompt("Enter your Last Name: ")
+      alert(`Your last name is ${name}`)
+
+      alert(`you're full name is ${name} ${name2}`)
+
+      //if browser treats prompt() return as a string, cast number() to use in math
+
+      //all data from prompt() is a STRING; must convert to Number() if wanting to do math
+     
+      var num = Number(prompt(`Enter a number: `))
+      //similar to int(input(enter a number))
+      
+      var square = num * num
+
+      console.log(sqaure.tofixed(2))
+
+      //convert num to an actual Number
+      num = Number(num)
+
+      //num is now a NUMBER and can be used in a math process
+      var multi = num * 7
+
+      alert(`${num} * 7 = ${multi}`) //in browser, pop-up alert
+
+      console.log(`The multi value is: ${multi}`) //in console [inspect]
+
+   </script>
+
+</body>
+</html>
