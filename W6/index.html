@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cleyder">
+    <meta name="description" content="pay calculator">
+    
+    <title>Week 6 pay calculator</title>
+
+</head>
+<body>
+    
+    
+    <h1>Pay calculator</h1>
+
+    
+    
+    <script>
+       
+        
+       var name = prompt("Enter your name: ")
+       console.log(`your name is ${name}`) 
+    
+
+
+        var weekly = prompt("How much do you earn in a week?: ")
+       
+        weekly = Number(weekly)
+
+        var gross = weekly * 2
+        var grossp = 0
+        grossp = gross.toFixed(2)
+
+        alert(` That's $${grossp} bi-weekly `) 
+        console.log(`gross is ${grossp}`) 
+        var netpay = grossp
+
+        var tax = prompt("Is that money taxable? (yes or no): ")
+        while (tax === "yes") {
+            var taxamount = .20
+            console.log(`tax amount is 20%`)
+            var net = grossp * taxamount
+            var netp = grossp - net
+            netpay = netp.toFixed(2)
+            console.log(`net pay is ${netpay}`)
+            break;
+
+        }
+        if (tax === "no"){
+            net = 0
+        }
+        alert(`Your gross pay is: $${grossp}\nYour net pay is $${netpay}\nUncle sam took $${net}`)
+        
+
+
+        
+
+
+    </script>
+
+
+
+
+</body>
+</html>
